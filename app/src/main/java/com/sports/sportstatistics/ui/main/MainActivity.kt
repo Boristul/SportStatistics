@@ -3,13 +3,16 @@ package com.sports.sportstatistics.ui.main
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.sports.sportstatistics.R
+import com.sports.sportstatistics.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity(R.layout.activity_main) {
+class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        val binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val navController = findNavController(R.id.am_nav_host_fragment).apply {
             addOnDestinationChangedListener { _, destination, _ ->
@@ -17,7 +20,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
             }
         }
 
-        findViewById<BottomNavigationView>(R.id.am_navigation).setOnNavigationItemSelectedListener { item ->
+        binding.navigation.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.menu_home -> {
                     navController.navigate(R.id.action_global_homeFragment)

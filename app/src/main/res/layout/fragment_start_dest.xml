@@ -11,7 +11,7 @@
         android:text="@string/sa_start_dest_title" />
 
     <Button
-        android:id="@+id/fsd_go_to_end_button"
+        android:id="@+id/go_to_end"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/sa_go_end_fragment" />

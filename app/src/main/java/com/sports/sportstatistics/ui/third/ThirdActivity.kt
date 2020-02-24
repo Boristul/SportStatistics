@@ -1,19 +1,20 @@
 package com.sports.sportstatistics.ui.third
 
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.sports.sportstatistics.R
+import com.sports.sportstatistics.databinding.ActivityThirdBinding
 
-class ThirdActivity : AppCompatActivity(R.layout.activity_third) {
+class ThirdActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        findViewById<TextView>(R.id.at_title_tv).text = intent.getStringExtra("second_activity")
+        val binding = ActivityThirdBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        findViewById<Button>(R.id.at_back_button).setOnClickListener {
+        binding.title.text = intent.getStringExtra("second_activity")
+
+        binding.back.setOnClickListener {
             finish()
         }
     }

@@ -2,26 +2,26 @@ package com.sports.sportstatistics.ui.second
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.sports.sportstatistics.R
+import com.sports.sportstatistics.databinding.ActivitySecondBinding
 import com.sports.sportstatistics.ui.third.ThirdActivity
 
-class SecondActivity : AppCompatActivity(R.layout.activity_second) {
+class SecondActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val binding = ActivitySecondBinding.inflate(layoutInflater)
 
-        val editText = findViewById<EditText>(R.id.as_edit_text)
+        setContentView(binding.root)
 
-        findViewById<Button>(R.id.as_back_button).setOnClickListener {
+        val editText = binding.inputText
+
+        binding.back.setOnClickListener {
             finish()
         }
 
-        findViewById<Button>(R.id.as_third_activity_button).setOnClickListener {
+        binding.toThirdActivity.setOnClickListener {
 
             editText.text.toString().apply {
 
@@ -36,6 +36,6 @@ class SecondActivity : AppCompatActivity(R.layout.activity_second) {
             }
         }
 
-        findViewById<TextView>(R.id.as_title_tv).text = intent.getStringExtra("Key")
+        binding.title.text = intent.getStringExtra("Key")
     }
 }
