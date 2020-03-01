@@ -6,6 +6,8 @@ apply plugin: 'kotlin-android-extensions'
 
 apply plugin: 'kotlin-kapt'
 
+apply plugin: 'kotlinx-serialization'
+
 android {
     compileSdkVersion 29
     buildToolsVersion '29.0.3'
@@ -46,6 +48,10 @@ dependencies {
 
     implementation 'androidx.room:room-ktx:2.2.4'
     kapt 'androidx.room:room-compiler:2.2.4'
+
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.14.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.6.2'
 
     testImplementation 'junit:junit:4.13'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
