@@ -37,7 +37,6 @@ data class Athlete(
     )
 ) : Parcelable {
     companion object {
-
         fun getId(name: String?, age: Int?, sportType: String?): Long =
             (name.hashCode() + age.hashCode() + sportType.hashCode()).toLong()
     }

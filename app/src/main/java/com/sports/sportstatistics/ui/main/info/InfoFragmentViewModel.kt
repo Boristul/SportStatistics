@@ -5,6 +5,5 @@ import androidx.lifecycle.AndroidViewModel
 import com.sports.sportstatistics.repository.AthletesRepository
 
 class InfoFragmentViewModel(application: Application) : AndroidViewModel(application) {
-
-    suspend fun getAthlets() = AthletesRepository().getAll()
+    suspend fun getAthletes() = AthletesRepository().getAll()
 }

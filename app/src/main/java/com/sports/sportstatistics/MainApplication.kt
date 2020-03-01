@@ -14,7 +14,6 @@ class MainApplication : Application() {
             .build()
     }
 
-
     companion object {
         lateinit var instance: Application
         lateinit var database: AppDatabase

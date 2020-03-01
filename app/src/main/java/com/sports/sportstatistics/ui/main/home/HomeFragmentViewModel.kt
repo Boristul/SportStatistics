@@ -12,13 +12,7 @@ class HomeFragmentViewModel(application: Application) : AndroidViewModel(applica
     fun addAthlete(name: String, age: Int?, sportType: String?, height: Double?, weight: Double?) =
         viewModelScope.launch {
             AthletesRepository().addAthlete(
-                Athlete(
-                    name,
-                    age ?: 0,
-                    height,
-                    weight,
-                    sportType
-                )
+                Athlete(name, age ?: 0, height, weight, sportType)
             )
         }
 }
