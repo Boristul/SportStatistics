@@ -23,12 +23,12 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
                     navController.navigate(R.id.action_global_homeFragment)
                     true
                 }
-                R.id.menu_info -> {
-                    navController.navigate(R.id.action_global_infoFragment)
+                R.id.menu_athletes -> {
+                    navController.navigate(R.id.action_global_athletesFragment)
                     true
                 }
-                R.id.menu_settings -> {
-                    navController.navigate(R.id.action_global_settingsFragment)
+                R.id.menu_teams -> {
+                    navController.navigate(R.id.action_global_teamsFragment)
                     true
                 }
                 else -> false
