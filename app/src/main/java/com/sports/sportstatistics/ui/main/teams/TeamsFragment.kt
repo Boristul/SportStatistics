@@ -9,7 +9,7 @@ import androidx.lifecycle.lifecycleScope
 import com.sports.sportstatistics.R
 import kotlinx.coroutines.launch
 
-class TeamsFragment : Fragment(R.layout.fragment_network) {
+class TeamsFragment : Fragment(R.layout.fragment_teams) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val viewModel by viewModels<TeamsFragmentViewModel>()

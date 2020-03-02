@@ -27,11 +27,11 @@
         android:id="@+id/athletesFragment"
         android:name="com.sports.sportstatistics.ui.main.athletes.AthletesFragment"
         android:label="@string/athletes_fragment_title"
-        tools:layout="@layout/fragment_info" />
+        tools:layout="@layout/fragment_athletes" />
     <fragment
         android:id="@+id/teamsFragment"
         android:name="com.sports.sportstatistics.ui.main.teams.TeamsFragment"
         android:label="@string/teams_fragment_title"
-        tools:layout="@layout/fragment_network" />
+        tools:layout="@layout/fragment_teams" />
 
 </navigation>
