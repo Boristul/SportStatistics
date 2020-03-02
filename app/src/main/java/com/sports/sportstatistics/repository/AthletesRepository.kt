@@ -13,5 +13,5 @@ class AthletesRepository {
     suspend fun getAll(): List<Athlete> = athleteDao.getAll()
 
     suspend fun getAllTeams() = athleteApi.getAllTeams().data
-    suspend fun getTeamById(id: Int) = athleteApi.getTeam(id)
+    suspend fun getTeamById(id: Long) = athleteApi.getTeam(id)
 }

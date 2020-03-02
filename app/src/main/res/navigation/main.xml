@@ -30,8 +30,8 @@
         tools:layout="@layout/fragment_info" />
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.sports.sportstatistics.ui.main.settings.SettingsFragment"
+        android:name="com.sports.sportstatistics.ui.main.settings.NetworkFragment"
         android:label="SettingsFragment"
-        tools:layout="@layout/fragment_settings" />
+        tools:layout="@layout/fragment_network" />
 
 </navigation>

@@ -4,6 +4,7 @@ import com.sports.sportstatistics.repository.network.api.model.Data
 import com.sports.sportstatistics.repository.network.api.model.Meta
 import kotlinx.serialization.SerialName
 import retrofit2.http.GET
+import retrofit2.http.Path
 
 @Suppress("ComplexInterface")
 interface AthletesApi {
@@ -12,7 +13,10 @@ interface AthletesApi {
     suspend fun getAllTeams(): ApiData
 
     @GET("api/v1/teams/{id}")
-    suspend fun getTeam(id: Int): Data
+    suspend fun getTeam(
+        @Path("id")
+        id: Long
+    ): Data
 }
 
 data class ApiData(
