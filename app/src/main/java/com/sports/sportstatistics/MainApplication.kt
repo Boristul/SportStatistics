@@ -12,7 +12,6 @@ import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import java.util.concurrent.TimeUnit
 
-
 class MainApplication : Application() {
 
     override fun onCreate() {

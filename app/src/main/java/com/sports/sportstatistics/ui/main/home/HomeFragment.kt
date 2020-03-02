@@ -14,7 +14,6 @@ import com.sports.sportstatistics.ui.second.SecondActivity
 class HomeFragment : Fragment(R.layout.fragment_home) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-
         val viewModel by viewModels<HomeFragmentViewModel>()
 
         val nameEditText = view.findViewById<EditText>(R.id.am_name_et)

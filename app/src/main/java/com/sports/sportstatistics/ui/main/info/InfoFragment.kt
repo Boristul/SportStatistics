@@ -11,7 +11,6 @@ import kotlinx.coroutines.launch
 
 class InfoFragment : Fragment(R.layout.fragment_info) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-
         val viewModel by viewModels<InfoFragmentViewModel>()
 
         viewLifecycleOwner.lifecycleScope.launch {
