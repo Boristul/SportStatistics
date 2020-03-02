@@ -10,6 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="16dp"
-        tools:text="@string/info_fragment_title" />
+        tools:text="@string/athletes_fragment_title" />
 
 </LinearLayout>

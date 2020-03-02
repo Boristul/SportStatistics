@@ -7,13 +7,13 @@
         android:title="@string/mm_general" />
 
     <item
-        android:id="@+id/menu_info"
-        android:icon="@drawable/ic_info"
-        android:title="@string/mm_info" />
+        android:id="@+id/menu_athletes"
+        android:icon="@drawable/ic_person"
+        android:title="@string/mm_athletes" />
 
     <item
-        android:id="@+id/menu_settings"
-        android:icon="@drawable/ic_settings"
-        android:title="@string/mm_settings" />
+        android:id="@+id/menu_teams"
+        android:icon="@drawable/ic_team"
+        android:title="@string/mm_teams" />
 
 </menu>

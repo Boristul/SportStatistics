@@ -2,8 +2,8 @@
     <string name="app_name">SportStatistics</string>
 
     <string name="mm_general">General</string>
-    <string name="mm_info">Info</string>
-    <string name="mm_settings">Settings</string>
+    <string name="mm_athletes">Athletes</string>
+    <string name="mm_teams">Teams</string>
 
     <string name="ma_go_activity">Go to second Activity</string>
     <string name="ma_name">Name</string>
@@ -23,7 +23,7 @@
     <string name="sa_go_to_third">go to third</string>
 
     <string name="ta_go_back">Go Back</string>
-    <string name="home_fragment_title">Home Fragment</string>
-    <string name="info_fragment_title">Info Fragment</string>
-    <string name="settings_fragment_title">Settings Fragment</string>
+    <string name="home_fragment_title">Home</string>
+    <string name="athletes_fragment_title">Athletes</string>
+    <string name="teams_fragment_title">Teams</string>
 </resources>
