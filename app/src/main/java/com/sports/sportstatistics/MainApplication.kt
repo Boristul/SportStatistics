@@ -27,7 +27,7 @@ class MainApplication : Application() {
                     .build()
             )
             .addConverterFactory(
-                Json(JsonConfiguration.Stable.copy(strictMode = false)).asConverterFactory(
+                Json(JsonConfiguration.Stable.copy()).asConverterFactory(
                     MediaType.get("application/json; charset=utf-8")
                 )
             )

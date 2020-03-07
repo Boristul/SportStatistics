@@ -53,7 +53,7 @@ dependencies {
     implementation("androidx.room:room-ktx:2.2.4")
     kapt("androidx.room:room-compiler:2.2.4")
 
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.14.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.20.0")
 
     implementation("com.squareup.retrofit2:retrofit:2.6.2")
 
