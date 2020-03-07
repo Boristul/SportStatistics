@@ -11,7 +11,7 @@
         android:text="@string/sa_end_dest_title" />
 
     <Button
-        android:id="@+id/fed_go_back_button"
+        android:id="@+id/go_back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/sa_go_back" />

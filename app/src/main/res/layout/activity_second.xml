@@ -12,24 +12,24 @@
         android:src="@drawable/ic_people"/>
 
     <TextView
-        android:id="@+id/as_title_tv"
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sa_second_activity" />
 
     <EditText
-        android:id="@+id/as_edit_text"
+        android:id="@+id/input_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/as_back_button"
+        android:id="@+id/back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/sa_go_back" />
 
     <Button
-        android:id="@+id/as_third_activity_button"
+        android:id="@+id/to_third_activity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/sa_go_to_third" />

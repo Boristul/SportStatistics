@@ -2,15 +2,26 @@ package com.sports.sportstatistics.ui.second.end
 
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.sports.sportstatistics.R
+import com.sports.sportstatistics.databinding.FragmentEndDestBinding
 
 class EndDestFragment : Fragment(R.layout.fragment_end_dest) {
+
+    private var _binding: FragmentEndDestBinding? = null
+    private val binding get() = _binding!!
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        view.findViewById<Button>(R.id.fed_go_back_button).setOnClickListener {
+        _binding = FragmentEndDestBinding.bind(view)
+
+        binding.goBack.setOnClickListener {
             findNavController().popBackStack()
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
