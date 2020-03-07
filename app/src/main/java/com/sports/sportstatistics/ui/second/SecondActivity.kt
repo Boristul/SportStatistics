@@ -12,7 +12,6 @@ class SecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivitySecondBinding.inflate(layoutInflater)
-
         setContentView(binding.root)
 
         val editText = binding.inputText

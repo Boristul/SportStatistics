@@ -2,9 +2,7 @@ package com.sports.sportstatistics.ui.main.home
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -12,22 +10,14 @@ import com.sports.sportstatistics.R
 import com.sports.sportstatistics.databinding.FragmentHomeBinding
 import com.sports.sportstatistics.ui.second.SecondActivity
 
-class HomeFragment : Fragment() {
+class HomeFragment : Fragment(R.layout.fragment_home) {
 
     private var _binding: FragmentHomeBinding? = null
-    private val binding get() = _binding!!
-
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
-        return binding.root
-    }
+    private val binding get() = checkNotNull(_binding)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val viewModel by viewModels<HomeFragmentViewModel>()
+        _binding = FragmentHomeBinding.bind(view)
 
         binding.goButton.setOnClickListener {
             startActivity(Intent(requireContext(), SecondActivity::class.java))
