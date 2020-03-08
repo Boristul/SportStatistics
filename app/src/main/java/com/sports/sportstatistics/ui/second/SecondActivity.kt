@@ -21,9 +21,7 @@ class SecondActivity : AppCompatActivity() {
         }
 
         binding.toThirdActivity.setOnClickListener {
-
             editText.text.toString().apply {
-
                 if (this.isNotBlank()) {
                     startActivity(
                         Intent(this@SecondActivity, ThirdActivity::class.java)
