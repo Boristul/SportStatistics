@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.sports.sportstatistics.R
 import com.sports.sportstatistics.databinding.FragmentHomeBinding
+import com.sports.sportstatistics.ui.main.motion.MotionActivity
 import com.sports.sportstatistics.ui.second.SecondActivity
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
@@ -21,6 +22,10 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         binding.goButton.setOnClickListener {
             startActivity(Intent(requireContext(), SecondActivity::class.java))
+        }
+
+        binding.motion.setOnClickListener {
+            startActivity(Intent(requireContext(), MotionActivity::class.java))
         }
 
         binding.addButton.setOnClickListener {

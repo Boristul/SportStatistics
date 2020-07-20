@@ -31,6 +31,6 @@ android {
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation("androidx.appcompat:appcompat:1.1.0")
-    implementation("androidx.core:core-ktx:1.2.0")
-    api("com.google.android.material:material:1.2.0-alpha05")
+    implementation("androidx.core:core-ktx:1.3.0")
+    api("com.google.android.material:material:1.3.0-alpha01")
 }

@@ -6,6 +6,7 @@
     <string name="mm_teams">Teams</string>
 
     <string name="ma_go_activity">Go to second Activity</string>
+    <string name="ma_motion_button">Motion</string>
     <string name="ma_name">Name</string>
     <string name="ma_age">Age</string>
     <string name="ma_height">Height</string>
