@@ -51,18 +51,18 @@ dependencies {
     implementation(project(":uikit"))
 
     implementation("androidx.appcompat:appcompat:1.1.0")
-    implementation("androidx.core:core-ktx:1.2.0")
-    implementation("androidx.constraintlayout:constraintlayout:1.1.3")
+    implementation("androidx.core:core-ktx:1.3.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.0.0-beta7")
 
-    implementation("androidx.navigation:navigation-fragment-ktx:2.2.1")
-    implementation("androidx.navigation:navigation-ui-ktx:2.2.1")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.3.0")
+    implementation("androidx.navigation:navigation-ui-ktx:2.3.0")
 
-    implementation("androidx.room:room-ktx:2.2.4")
-    kapt("androidx.room:room-compiler:2.2.4")
+    implementation("androidx.room:room-ktx:2.2.5")
+    kapt("androidx.room:room-compiler:2.2.5")
 
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.20.0")
 
-    implementation("com.squareup.retrofit2:retrofit:2.6.2")
+    implementation("com.squareup.retrofit2:retrofit:2.8.1")
 
     testImplementation("junit:junit:4.13")
     androidTestImplementation("androidx.test.ext:junit:1.1.1")

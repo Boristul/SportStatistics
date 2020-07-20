@@ -2,7 +2,7 @@ package com.sports.sportstatistics
 
 import android.app.Application
 import androidx.room.Room
-import com.sports.sportstatistics.repository.database.DataBase
+import com.sports.sportstatistics.repository.database.Database
 import com.sports.sportstatistics.repository.network.api.AthletesApi
 import com.sports.sportstatistics.repository.network.api.serializer.asConverterFactory
 import kotlinx.serialization.json.Json
@@ -16,7 +16,7 @@ class MainApplication : Application() {
 
     companion object {
         lateinit var instance: Application
-        lateinit var database: DataBase
+        lateinit var database: Database
         lateinit var api: AthletesApi
 
         private const val RETROFIT_TIMEOUT = 30L
@@ -25,7 +25,7 @@ class MainApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         instance = this
-        database = Room.databaseBuilder(this, DataBase::class.java, "database")
+        database = Room.databaseBuilder(this, Database::class.java, "database")
             .build()
         api = Retrofit.Builder()
             .baseUrl("https://www.balldontlie.io/")

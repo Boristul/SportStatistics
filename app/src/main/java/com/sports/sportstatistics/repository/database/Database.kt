@@ -6,6 +6,6 @@ import com.sports.sportstatistics.repository.database.dao.AthleteDao
 import com.sports.sportstatistics.repository.database.entity.Athlete
 
 @Database(entities = [Athlete::class], version = 1)
-abstract class DataBase : RoomDatabase() {
+abstract class Database : RoomDatabase() {
     abstract fun athleteDao(): AthleteDao
 }
